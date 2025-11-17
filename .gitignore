@@ -1,0 +1,133 @@
+# ==========================================
+# PYTHON
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+
+# Byte-compiled / optimized / DLL files
+*.pyd
+*.pyo
+*.so
+*.dll
+
+
+# ==========================================
+# FASTAPI / UVICORN / LOGS
+# ==========================================
+*.log
+logs/
+*.pid
+
+
+# ==========================================
+# PIP / DEPENDENCIES
+# ==========================================
+pip-log.txt
+pip-delete-this-directory.txt
+
+
+# ==========================================
+# CONFIG / ENVIRONMENT
+# ==========================================
+# Nunca commitar suas credenciais do Mongo Atlas!
+.env
+.env.*
+
+
+# ==========================================
+# EDITOR / OS FILES
+# ==========================================
+
+# VSCode
+.vscode/
+.vs
+.history/
+
+# JetBrains / PyCharm
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+# ==========================================
+# TESTS
+# ==========================================
+.coverage
+coverage.xml
+pytest_cache/
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.pytest_cache/
+hypothesis/
+
+
+# ==========================================
+# BUILD / PACKAGE FILES
+# ==========================================
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+*.egg-info/
+*.egg
+MANIFEST
+
+
+# ==========================================
+# DOCKER
+# ==========================================
+docker-data/
+docker-compose.override.yml
+
+
+# ==========================================
+# CACHE / TEMP
+# ==========================================
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+.cache/
+.tmp/
+__temp__/
+
+
+# ==========================================
+# PROJECT SPECIFIC
+# ==========================================
+
+# Arquivos exportados/gerados
+exports/
+output/
+generated/
+
+# Modelos, checkpoints ou dumps
+*.dump
+*.backup
+
