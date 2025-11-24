@@ -5,8 +5,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
 # Virtual environments
 .venv/
+.venv
 venv/
 ENV/
 env/
@@ -36,8 +38,7 @@ pip-delete-this-directory.txt
 
 # ==========================================
 # CONFIG / ENVIRONMENT
-# ==========================================
-# Nunca commitar suas credenciais do Mongo Atlas!
+# =======================================
 .env
 .env.*
 
