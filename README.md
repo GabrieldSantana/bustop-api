@@ -1,9 +1,7 @@
 # BuStop API
 
-Este projeto é a versão **migrada e aprimorada** da sua API original
-escrita em Node.js (Express), agora utilizando **Python + FastAPI**,
-mantendo todas as funcionalidades e adicionando várias melhorias
-estruturais, de segurança e de performance.
+Este projeto utilizan **Python + FastAPI**,
+do Bustop
 
 ------------------------------------------------------------------------
 
