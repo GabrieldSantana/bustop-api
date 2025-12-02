@@ -32,15 +32,20 @@ async def insert_leitura(
 
 
 async def get_leituras(db: AsyncIOMotorDatabase, limit: int = 100) -> List[dict]:
-    """
-    Retorna as últimas leituras do MongoDB, já formatando id e mantendo campos extras
-    """
+    
+    # Retorna as últimas leituras do MongoDB, já formatando id e mantendo campos extras
+    
     cursor = db[COLLECTION].find().sort("timestamp", -1).limit(limit)
     docs = []
     async for doc in cursor:
         # Converte _id para id
         doc["id"] = str(doc.get("_id") or "")
         doc.pop("_id", None)
+
+        # Convertendo timestamp para string
+        if "timestamp" in doc and isinstance(doc["timestamp"], datetime):
+            doc["timestamp"] = doc["timestamp"].strftime("%d/%m/%Y - %H:%M")
+
 
         # Garantir campos obrigatórios no retorno
         doc.setdefault("parada_id", "")
